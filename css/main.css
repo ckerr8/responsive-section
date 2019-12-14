@@ -26,11 +26,11 @@ section {
 }
 
 .wrapper {
-  margin: 0;
   display: flex;
   flex-wrap: wrap;
   padding: 1em;
   max-width: 45em;
+  margin: 0 auto;
 }
 
 .img-flex {
@@ -39,9 +39,42 @@ section {
 }
 
 .section-letter {
-  width: 50%
+  width: 50%;
 }
 
 .section-icon {
-  width: 50%
+  width: 50%;
+}
+
+section h2 {
+  margin: 0;
+  padding-right: 1em;
+}
+
+section p {
+  margin: 0;
+  padding-right: 1em;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .wrapper {
+    max-width: 22em;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section p {
+    padding-right: 0;
+  }
+
+  .section-letter {
+    padding: .3em .5em;
+  }
+
+  .section-icon {
+    padding: .3em;
+  }
+
 }
